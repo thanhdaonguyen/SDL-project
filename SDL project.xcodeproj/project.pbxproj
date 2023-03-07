@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B8C4A525298FE7780069FCF0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8C4A524298FE7780069FCF0 /* main.cpp */; };
+		B8C4A532299087F70069FCF0 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C4A52C298FE98A0069FCF0 /* SDL2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		B8C4A521298FE7780069FCF0 /* SDL project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "SDL project"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8C4A524298FE7780069FCF0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B8C4A52C298FE98A0069FCF0 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		B8C4A530299087C70069FCF0 /* Headers */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Headers; path = ../../../../../../Library/Frameworks/SDL2.framework/Versions/A/Headers; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8C4A532299087F70069FCF0 /* SDL2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +47,7 @@
 			children = (
 				B8C4A523298FE7780069FCF0 /* SDL project */,
 				B8C4A522298FE7780069FCF0 /* Products */,
+				B8C4A52B298FE98A0069FCF0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +65,15 @@
 				B8C4A524298FE7780069FCF0 /* main.cpp */,
 			);
 			path = "SDL project";
+			sourceTree = "<group>";
+		};
+		B8C4A52B298FE98A0069FCF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8C4A530299087C70069FCF0 /* Headers */,
+				B8C4A52C298FE98A0069FCF0 /* SDL2.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +253,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -247,6 +265,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -1,14 +1,15 @@
-//
-//  main.cpp
-//  SDL project
-//
-//  Created by Thành Đạo Nguyễn on 05/02/2023.
-//
+#include<iostream>
+#include<SDL2/SDL.h>
+#include<stdlib.h>
 
-#include <iostream>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+int main() {
+//    while (game is running) {
+//
+//        handle any users input
+//        update all is_object
+//        render changes to display
+//
+//    }
 }
